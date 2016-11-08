@@ -32,10 +32,10 @@ public class Board extends JPanel implements ActionListener {
         g.drawLine(115, 90, 135, 140);//Antebrazo derecho
         g.drawLine(135, 140, 90, 150);//Brazo derecho
         g.setColor(Color.BLUE);
-        g.fillRect(112, 87, 6, 6);
-        g.fillRect(72, 118, 6, 6);
-        g.fillRect(42, 87, 6, 6);
-        g.fillRect(112, 167, 6, 6);
+        g.fillRect(112, 87, 6, 6);//Cuello
+        g.fillRect(72, 118, 6, 6);//Codo izquierdo
+        g.fillRect(42, 87, 6, 6);//Mano izquierda
+        g.fillRect(112, 167, 6, 6);//
         g.fillRect(82, 207, 6, 6);
         g.fillRect(82, 252, 6, 6);
         g.fillRect(142, 207, 6, 6);
