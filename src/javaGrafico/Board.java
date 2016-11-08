@@ -22,15 +22,15 @@ public class Board extends JPanel implements ActionListener {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawOval(100, 50, 30, 40);
-        g.drawLine(115, 90, 75, 120);
-        g.drawLine(75, 120, 45, 90);
-        g.drawLine(115, 90, 115, 170);
-        g.drawLine(115, 170, 85, 210);
-        g.drawLine(85, 210, 85, 255);
-        g.drawLine(115, 170, 145, 210);
-        g.drawLine(145, 210, 145, 255);
-        g.drawLine(115, 90, 135, 140);
-        g.drawLine(135, 140, 90, 150);
+        g.drawLine(115, 90, 75, 120);//Antebrazo izquierdo
+        g.drawLine(75, 120, 45, 90);//Brazo izquierdo
+        g.drawLine(115, 90, 115, 170);//Torso
+        g.drawLine(115, 170, 85, 210);//Antepierna izquierda
+        g.drawLine(85, 210, 85, 255);//Pierna izquierda
+        g.drawLine(115, 170, 145, 210);//Antepierna derecha
+        g.drawLine(145, 210, 145, 255);//Pierna derecha
+        g.drawLine(115, 90, 135, 140);//Antebrazo derecho
+        g.drawLine(135, 140, 90, 150);//Brazo derecho
         g.setColor(Color.BLUE);
         g.fillRect(112, 87, 6, 6);
         g.fillRect(72, 118, 6, 6);
