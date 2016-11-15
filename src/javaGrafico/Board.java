@@ -89,11 +89,13 @@ public class Board extends JPanel implements ActionListener {
         */
         //Cuadro
         Graphics2D g2d = (Graphics2D) g;
-        g.drawRect(this.cuerpoX,this.cuerpoY,60,40);
-        g.drawLine(this.cuerpoX, this.cuerpoY + 40, this.cuerpoX + (int)this.pata1X, this.cuerpoY + 40 + (int)this.pata1Y);
-        g.drawLine(this.cuerpoX, this.cuerpoY + 40, this.cuerpoX + (int)this.pata2X, this.cuerpoY + 40 + (int)this.pata2Y);
-        g.drawLine(this.cuerpoX + 60, this.cuerpoY + 40, this.cuerpoX + 60 + (int)this.pata1X, this.cuerpoY + 40 + (int)this.pata1Y);
-        g.drawLine(this.cuerpoX + 60, this.cuerpoY + 40, this.cuerpoX + 60 + (int)this.pata2X, this.cuerpoY + 40 + (int)this.pata2Y);
-        g.drawOval(this.circuloX, this.circuloY, 30, 30);
+        Rectangle cuerpo = new Rectangle(this.cuerpoX,this.cuerpoY,60,40);
+        g2d.drawRect(WIDTH, WIDTH, WIDTH, WIDTH);
+        g2d.drawLine(this.cuerpoX, this.cuerpoY + 40, this.cuerpoX + (int)this.pata1X, this.cuerpoY + 40 + (int)this.pata1Y);
+        g2d.drawLine(this.cuerpoX, this.cuerpoY + 40, this.cuerpoX + (int)this.pata2X, this.cuerpoY + 40 + (int)this.pata2Y);
+        g2d.drawLine(this.cuerpoX + 60, this.cuerpoY + 40, this.cuerpoX + 60 + (int)this.pata1X, this.cuerpoY + 40 + (int)this.pata1Y);
+        g2d.drawLine(this.cuerpoX + 60, this.cuerpoY + 40, this.cuerpoX + 60 + (int)this.pata2X, this.cuerpoY + 40 + (int)this.pata2Y);
+        g2d.drawOval(this.circuloX, this.circuloY, 30, 30);
+        
     }
 }
